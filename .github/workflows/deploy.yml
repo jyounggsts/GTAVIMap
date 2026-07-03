@@ -30,3 +30,4 @@ jobs:
           commit_message: 'chore: rebuild docs for GitHub Pages'
           file_pattern: docs/**
           branch: main
+          skip_dirty_check: true

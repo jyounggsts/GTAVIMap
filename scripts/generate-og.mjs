@@ -5,7 +5,7 @@ import sharp from 'sharp'
 const root = resolve(import.meta.dirname, '..')
 const bgPath = resolve(root, 'public/og-background.jpg')
 const overlayPath = resolve(root, 'public/og-overlay.svg')
-const outPath = resolve(root, 'public/og-image.png')
+const outPath = resolve(root, 'public/social-preview.png')
 
 const WIDTH = 1200
 const HEIGHT = 630
@@ -21,4 +21,4 @@ await sharp(background)
   .png({ quality: 95, compressionLevel: 9 })
   .toFile(outPath)
 
-console.log('Generated public/og-image.png')
+console.log('Generated public/social-preview.png')
