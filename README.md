@@ -9,12 +9,6 @@ Currently in **countdown mode** until November 19, 2026. The UI shell is live; o
 ## GitHub Pages
 
 - **Repo:** [github.com/jyounggsts/GTAVIMap](https://github.com/jyounggsts/GTAVIMap)
-- **Deploy:** `docs/` folder on `main` (same pattern as [sport-tracker](https://github.com/jyounggsts/sport-tracker))
-- **CI:** `.github/workflows/deploy.yml` rebuilds `docs/` on every push
-
-```bash
-npm run pages:build   # build dist/ and sync to docs/
-```
 
 ## Roadmap
 
