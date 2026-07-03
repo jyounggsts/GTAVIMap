@@ -6,9 +6,9 @@ const root = resolve(import.meta.dirname, '..')
 const bgPath = resolve(root, 'public/og-background.png')
 const overlayPath = resolve(root, 'public/og-overlay.svg')
 
-// 2:1 ratio — X/Twitter summary_large_image preferred size
+// 1.91:1 — X/Twitter summary_large_image recommended size
 const WIDTH = 1200
-const HEIGHT = 600
+const HEIGHT = 630
 
 const background = await sharp(bgPath)
   .resize(WIDTH, HEIGHT, { fit: 'cover', position: 'center' })
@@ -25,10 +25,10 @@ const card = await sharp(background)
   .jpeg({ quality: 92, mozjpeg: true })
   .toBuffer()
 
-const cardPath = resolve(root, 'public/social-card.jpg')
+const cardPath = resolve(root, 'public/gtavi-map-share.jpg')
 const pngPath = resolve(root, 'public/social-preview.png')
 
 await sharp(card).toFile(cardPath)
 await sharp(card).png({ compressionLevel: 9 }).toFile(pngPath)
 
-console.log('Generated public/social-card.jpg (X/OG) and public/social-preview.png')
+console.log('Generated public/gtavi-map-share.jpg (X/OG) and public/social-preview.png')
