@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build docs for GitHub Pages
 
 on:
   push:
@@ -6,13 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
+  contents: write
 
 jobs:
   build:
@@ -27,21 +21,12 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install and build
-        run: npm ci && npm run build
+      - name: Build and sync docs
+        run: npm ci && npm run pages:build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Commit docs
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          commit_message: 'chore: rebuild docs for GitHub Pages'
+          file_pattern: docs/**
+          branch: main
