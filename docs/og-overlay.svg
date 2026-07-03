@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
   <defs>
     <linearGradient id="overlay" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0a0e17" stop-opacity="0.45"/>
@@ -29,21 +29,21 @@
     </filter>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#overlay)"/>
-  <rect width="1200" height="630" fill="url(#vignette)"/>
+  <rect width="1200" height="600" fill="url(#overlay)"/>
+  <rect width="1200" height="600" fill="url(#vignette)"/>
 
   <rect x="80" y="80" width="4" height="48" fill="url(#bar)" opacity="0.9"/>
-  <rect x="1116" y="502" width="4" height="48" fill="url(#bar)" opacity="0.9"/>
+  <rect x="1116" y="472" width="4" height="48" fill="url(#bar)" opacity="0.9"/>
 
-  <text x="600" y="250" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" letter-spacing="18" fill="rgba(255,255,255,0.9)" filter="url(#textShadow)">OFFICIAL INTERACTIVE</text>
+  <text x="600" y="235" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" letter-spacing="18" fill="rgba(255,255,255,0.9)" filter="url(#textShadow)">OFFICIAL INTERACTIVE</text>
 
-  <text x="600" y="370" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="118" font-weight="900" letter-spacing="4" fill="#ffffff" filter="url(#textShadow)">
+  <text x="600" y="355" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="118" font-weight="900" letter-spacing="4" fill="#ffffff" filter="url(#textShadow)">
     <tspan>GTA </tspan><tspan fill="url(#vi)">VI MAP</tspan>
   </text>
 
-  <rect x="280" y="420" width="640" height="80" rx="4" fill="rgba(10,14,23,0.88)" stroke="rgba(255,45,149,0.45)" stroke-width="1"/>
-  <text x="600" y="458" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="rgba(255,255,255,0.92)" filter="url(#textShadow)">Explore Vice City — launching November 19, 2026</text>
-  <text x="600" y="488" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="rgba(255,255,255,0.65)">Collectibles · Missions · Secrets · Community Map</text>
+  <rect x="280" y="395" width="640" height="80" rx="4" fill="rgba(10,14,23,0.88)" stroke="rgba(255,45,149,0.45)" stroke-width="1"/>
+  <text x="600" y="433" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="rgba(255,255,255,0.92)" filter="url(#textShadow)">Explore Vice City — launching November 19, 2026</text>
+  <text x="600" y="463" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="rgba(255,255,255,0.65)">Collectibles · Missions · Secrets · Community Map</text>
 
-  <text x="600" y="575" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="4" fill="rgba(0,229,200,0.8)" filter="url(#textShadow)">jyounggsts.github.io/GTAVIMap</text>
+  <text x="600" y="545" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="4" fill="rgba(0,229,200,0.8)" filter="url(#textShadow)">jyounggsts.github.io/GTAVIMap</text>
 </svg>
