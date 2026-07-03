@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+  <defs>
+    <linearGradient id="ocean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1a2e"/>
+      <stop offset="100%" stop-color="#061018"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a2f1f"/>
+      <stop offset="40%" stop-color="#2a3d28"/>
+      <stop offset="100%" stop-color="#1e3328"/>
+    </linearGradient>
+    <linearGradient id="city" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3d3550"/>
+      <stop offset="100%" stop-color="#2a2438"/>
+    </linearGradient>
+    <linearGradient id="beach" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c4a882"/>
+      <stop offset="100%" stop-color="#8b7355"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M 64 0 L 0 0 0 64" fill="none" stroke="rgba(0,229,200,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Ocean base -->
+  <rect width="2048" height="2048" fill="url(#ocean)"/>
+  <rect width="2048" height="2048" fill="url(#grid)"/>
+
+  <!-- Main Leonida landmass -->
+  <path fill="url(#land)" stroke="rgba(0,229,200,0.25)" stroke-width="3"
+    d="M 280 420 L 520 380 L 780 400 L 1020 360 L 1280 390 L 1520 370 L 1780 420 L 1860 580 L 1820 820 L 1760 1080 L 1680 1320 L 1580 1520 L 1420 1680 L 1200 1780 L 980 1820 L 760 1790 L 560 1700 L 400 1540 L 300 1320 L 240 1080 L 220 820 L 240 580 Z"/>
+
+  <!-- Keys archipelago -->
+  <ellipse cx="1680" cy="1480" rx="120" ry="40" fill="#1a3528" stroke="rgba(255,45,149,0.3)" stroke-width="2"/>
+  <ellipse cx="1780" cy="1540" rx="80" ry="28" fill="#1a3528" stroke="rgba(255,45,149,0.3)" stroke-width="2"/>
+  <ellipse cx="1860" cy="1580" rx="60" ry="22" fill="#1a3528" stroke="rgba(255,45,149,0.3)" stroke-width="2"/>
+  <ellipse cx="1920" cy="1620" rx="45" ry="18" fill="#1a3528" stroke="rgba(255,45,149,0.3)" stroke-width="2"/>
+
+  <!-- Beach strip -->
+  <path fill="url(#beach)" opacity="0.7"
+    d="M 400 1540 L 560 1700 L 760 1790 L 980 1820 L 1200 1780 L 1420 1680 L 1380 1720 L 1180 1820 L 960 1840 L 720 1800 L 480 1680 L 360 1520 Z"/>
+
+  <!-- Vice City metro -->
+  <path fill="url(#city)" stroke="rgba(255,45,149,0.5)" stroke-width="2" filter="url(#glow)"
+    d="M 880 1280 L 1080 1240 L 1280 1280 L 1320 1420 L 1280 1560 L 1080 1600 L 880 1560 L 840 1420 Z"/>
+
+  <!-- Port Gellhorn -->
+  <ellipse cx="620" cy="1180" rx="140" ry="90" fill="#2a3540" stroke="rgba(0,229,200,0.4)" stroke-width="2"/>
+
+  <!-- Ambrosia -->
+  <ellipse cx="1480" cy="980" rx="160" ry="100" fill="#2a4030" stroke="rgba(255,107,44,0.35)" stroke-width="2"/>
+
+  <!-- Grassrivers -->
+  <ellipse cx="1080" cy="720" rx="200" ry="120" fill="#1e3828" stroke="rgba(0,229,200,0.3)" stroke-width="2"/>
+
+  <!-- Mount Kalaga region -->
+  <ellipse cx="420" cy="780" rx="130" ry="160" fill="#2a2838" stroke="rgba(255,45,149,0.25)" stroke-width="2"/>
+
+  <!-- Highways -->
+  <path fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="6" stroke-linecap="round"
+    d="M 400 1540 Q 700 1400 1080 1420 Q 1400 1440 1680 1320"/>
+  <path fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="4"
+    d="M 620 1180 L 880 1280 L 1080 720 L 1480 980"/>
+
+  <!-- Water bodies -->
+  <ellipse cx="960" cy="1080" rx="80" ry="50" fill="#0c2030" opacity="0.8"/>
+  <ellipse cx="1240" cy="620" rx="100" ry="60" fill="#0c2030" opacity="0.8"/>
+
+  <!-- Region labels -->
+  <g font-family="Arial,sans-serif" font-weight="700" fill="rgba(255,255,255,0.55)" text-anchor="middle">
+    <text x="1080" y="1440" font-size="42" letter-spacing="6" fill="rgba(255,45,149,0.7)">VICE CITY</text>
+    <text x="620" y="1190" font-size="28" letter-spacing="3">PORT GELLHORN</text>
+    <text x="1480" y="990" font-size="28" letter-spacing="3">AMBROSIA</text>
+    <text x="1080" y="730" font-size="28" letter-spacing="3">GRASSRIVERS</text>
+    <text x="420" y="790" font-size="24" letter-spacing="2">MOUNT KALAGA</text>
+    <text x="1780" y="1560" font-size="22" letter-spacing="2" fill="rgba(0,229,200,0.6)">LEONIDA KEYS</text>
+  </g>
+
+  <!-- Neon coastline accent -->
+  <path fill="none" stroke="rgba(0,229,200,0.35)" stroke-width="2" filter="url(#glow)"
+    d="M 400 1540 L 560 1700 L 760 1790 L 980 1820 L 1200 1780 L 1420 1680 L 1580 1520"/>
+
+  <!-- Compass rose -->
+  <g transform="translate(1800,200)" opacity="0.4">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(255,45,149,0.5)" stroke-width="1"/>
+    <path d="M 0 -40 L 8 0 L 0 40 L -8 0 Z" fill="rgba(255,45,149,0.6)"/>
+    <text y="65" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.5)">N</text>
+  </g>
+</svg>
