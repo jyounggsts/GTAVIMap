@@ -38,7 +38,7 @@ const CATEGORIES = [
     title: 'World',
     items: [
       { icon: '🌴', label: 'Vice City Districts' },
-      { icon: '🏝', label: 'Leonida Keys' },
+      { icon: '🏝', label: 'Keys' },
       { icon: '🛣', label: 'Highways & Fast Travel' },
       { icon: '📍', label: 'User Pins' },
     ],
@@ -59,7 +59,7 @@ const PLACEHOLDER_MARKERS = [
   { lat: 0.35, lng: 0.32, label: 'Port Gellhorn', type: 'teal' },
   { lat: 0.42, lng: 0.72, label: 'Ambrosia', type: 'pink' },
   { lat: 0.62, lng: 0.52, label: 'Grassrivers', type: 'teal' },
-  { lat: 0.28, lng: 0.78, label: 'Leonida Keys', type: 'pink' },
+  { lat: 0.28, lng: 0.78, label: 'Keys', type: 'pink' },
   { lat: 0.38, lng: 0.22, label: 'Mount Kalaga', type: 'teal' },
 ]
 
@@ -128,10 +128,10 @@ function buildApp() {
 
     <div class="hero-overlay ${localStorage.getItem(HERO_DISMISSED_KEY) ? 'hidden' : ''}" id="hero">
       <div class="hero-content">
-        <div class="hero-gta">Grand Theft Auto</div>
-        <div class="hero-title">GTA <span class="hero-vi">VI</span> Map</div>
+        <div class="hero-gta">Official Interactive</div>
+        <div class="hero-title">GTA <span class="hero-vi">VI</span> MAP</div>
         <p class="hero-tagline">
-          The definitive Leonida interactive map — launching alongside Grand Theft Auto VI.
+          The definitive GTA VI interactive map — launching alongside Grand Theft Auto VI.
           Explore Vice City and beyond with collectibles, missions, and secrets mapped for the community.
         </p>
         <div class="hero-countdown countdown-units" id="hero-countdown">
@@ -147,10 +147,10 @@ function buildApp() {
     <header class="site-header">
       <div class="brand">
         <div class="brand-logo">
-          <span class="brand-gta">GRAND THEFT AUTO</span>
+          <span class="brand-gta">OFFICIAL INTERACTIVE</span>
           <span class="brand-vi">GTA VI MAP</span>
         </div>
-        <span class="brand-subtitle">Leonida Interactive Guide</span>
+        <span class="brand-subtitle">Interactive Guide</span>
       </div>
       <div class="header-actions">
         <div class="status-badge">
@@ -195,10 +195,10 @@ function buildApp() {
           <div class="map-lock-banner">
             <h2>Map Classified</h2>
             <p>
-              You're viewing a preview of the Leonida interactive map interface.
+              You're viewing a preview of the GTA VI interactive map interface.
               Official terrain data, collectibles, and location markers will be added when Grand Theft Auto VI launches.
             </p>
-            <span class="tagline">Vice City, USA — Leonida</span>
+            <span class="tagline">Vice City, USA</span>
           </div>
         </div>
         <div class="map-hud hud-compass" aria-hidden="true"></div>
