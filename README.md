@@ -2,14 +2,19 @@
 
 **GTA VI Map** — pre-launch interactive map for **Grand Theft Auto VI** — a community location guide for Leonida, inspired by [RDO Map](https://jeanropke.github.io/RDOMap/).
 
-Live site: `https://<your-username>.github.io/GTAVIMap/`
+Live site: **https://jyounggsts.github.io/GTAVIMap/**
 
 Currently in **countdown mode** until November 19, 2026. The UI shell is live; official map tiles and location data will be added at release.
 
 ## GitHub Pages setup
 
-1. Create a GitHub repo named **`GTAVIMap`** (name must match `base` in `vite.config.js`).
-2. Push this project to the `main` branch.
+1. Create a GitHub repo named **`GTAVIMap`** at [github.com/jyounggsts](https://github.com/jyounggsts) (name must match `base` in `vite.config.js`).
+2. Push this project to the `main` branch:
+
+```bash
+git remote add origin https://github.com/jyounggsts/GTAVIMap.git
+git push -u origin main
+```
 3. In the repo go to **Settings → Pages → Build and deployment** and set source to **GitHub Actions**.
 4. The workflow in `.github/workflows/deploy.yml` builds and publishes automatically on every push to `main`.
 
