@@ -150,7 +150,6 @@ function buildApp() {
           <span class="brand-gta">OFFICIAL INTERACTIVE</span>
           <span class="brand-vi">GTA VI MAP</span>
         </div>
-        <span class="brand-subtitle">Interactive Guide</span>
       </div>
       <div class="header-actions">
         <div class="status-badge">
