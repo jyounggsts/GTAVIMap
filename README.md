@@ -6,28 +6,15 @@ Live site: **https://jyounggsts.github.io/GTAVIMap/**
 
 Currently in **countdown mode** until November 19, 2026. The UI shell is live; official map tiles and location data will be added at release.
 
-## GitHub Pages setup
+## GitHub Pages
 
-1. Create a GitHub repo named **`GTAVIMap`** at [github.com/jyounggsts](https://github.com/jyounggsts) (name must match `base` in `vite.config.js`).
-2. Push this project to the `main` branch:
-
-```bash
-git remote add origin https://github.com/jyounggsts/GTAVIMap.git
-git push -u origin main
-```
-3. In the repo go to **Settings → Pages → Build and deployment** and set source to **GitHub Actions**.
-4. The workflow in `.github/workflows/deploy.yml` builds and publishes automatically on every push to `main`.
-
-If you use a different repo name, update `base` in `vite.config.js` to `/<your-repo-name>/`.
-
-## Local build (optional)
+- **Repo:** [github.com/jyounggsts/GTAVIMap](https://github.com/jyounggsts/GTAVIMap)
+- **Deploy:** `docs/` folder on `main` (same pattern as [sport-tracker](https://github.com/jyounggsts/sport-tracker))
+- **CI:** `.github/workflows/deploy.yml` rebuilds `docs/` on every push
 
 ```bash
-npm install
-npm run build
+npm run pages:build   # build dist/ and sync to docs/
 ```
-
-Static output is in `dist/`.
 
 ## Roadmap
 
