@@ -1,6 +1,6 @@
 # GTA VI Map
 
-**GTA VI Map** — pre-launch interactive map for **Grand Theft Auto VI** — a community location guide for Leonida, inspired by [RDO Map](https://jeanropke.github.io/RDOMap/).
+**GTA VI Map** — pre-launch interactive map for **Grand Theft Auto VI** — a community location guide for GTA VI, inspired by [RDO Map](https://jeanropke.github.io/RDOMap/).
 
 Live site: **https://jyounggsts.github.io/GTAVIMap/**
 
