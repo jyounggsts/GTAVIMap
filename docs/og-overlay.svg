@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="overlay" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0a0e17" stop-opacity="0.55"/>
@@ -21,26 +21,20 @@
     </filter>
   </defs>
 
-  <!-- Official GTA VI campaign background (Rockstar poster) -->
-  <image href="og-background.jpg" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice"/>
   <rect width="1200" height="630" fill="url(#overlay)"/>
 
-  <!-- Accent bars -->
   <rect x="80" y="80" width="4" height="48" fill="url(#bar)" opacity="0.9"/>
   <rect x="1116" y="502" width="4" height="48" fill="url(#bar)" opacity="0.9"/>
 
-  <!-- Brand -->
   <text x="600" y="250" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" letter-spacing="18" fill="rgba(232,237,245,0.75)">OFFICIAL INTERACTIVE</text>
 
   <text x="600" y="370" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="118" font-weight="900" letter-spacing="4" fill="#e8edf5" filter="url(#glow)">
     <tspan>GTA </tspan><tspan fill="url(#vi)">VI MAP</tspan>
   </text>
 
-  <!-- Tagline box -->
   <rect x="300" y="430" width="600" height="72" rx="4" fill="rgba(10,14,23,0.8)" stroke="rgba(255,45,149,0.4)" stroke-width="1"/>
   <text x="600" y="465" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="rgba(232,237,245,0.85)">Explore Vice City — launching November 19, 2026</text>
   <text x="600" y="495" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="rgba(232,237,245,0.55)">Collectibles · Missions · Secrets · Community Map</text>
 
-  <!-- Bottom URL -->
   <text x="600" y="575" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="4" fill="rgba(0,229,200,0.65)">jyounggsts.github.io/GTAVIMap</text>
 </svg>
